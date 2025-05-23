@@ -14,7 +14,6 @@ font-style: normal;
 button, a {
     cursor: pointer;
 }
-
 `;
 
 export default globalStyles;

@@ -27,12 +27,9 @@ import {
 export function Home() {
 	return (
 		<MainContainer>
-			<Title> Pilates Online pra gestantes vivendo na Irlanda</Title>
-
 			<Section1>
 				<Info>
 					<Title> PORQUE FAZER EXERCÍCIOS DURANTE A GESTAÇÃO?</Title>
-
 					<InfoParagraph>
 						<Smiley size={28} /> Melhora da autoestima
 					</InfoParagraph>
@@ -47,31 +44,34 @@ export function Home() {
 						<Repeat size={28} /> Recuperação pós-parto mais rápida
 					</InfoParagraph>
 				</Info>
+			</Section1>
 
+			<Section2>
 				<ContainerImg>
 					<img
 						src={exerciseImg}
 						alt="Gestante se exercitando com a bola de pilates"
 					/>
 				</ContainerImg>
-			</Section1>
-
-			<Section2>
-				<SecondTitle>
-					COMO FUNCIONA O PILATES ONLINE{" "}
-					<img
-						width="50"
-						height="50"
-						src="https://img.icons8.com/ios/F4EEED/ask-question--v1.png"
-						alt="ask-question--v1"
-					/>
-				</SecondTitle>
-				<Paragraph>Flexibilidade de horário - treine quando quiser!</Paragraph>
-				<Paragraph>Exercite-se no conforto do seu lar</Paragraph>
-				<Paragraph>Exercícios adaptados pra você</Paragraph>
-				<Paragraph>
-					Acompanhamento individual com orientações e avaliações
-				</Paragraph>
+				<Info>
+					<SecondTitle>
+						COMO FUNCIONA O PILATES ONLINE{" "}
+						<img
+							width="50"
+							height="50"
+							src="https://img.icons8.com/ios/F4EEED/ask-question--v1.png"
+							alt="ask-question--v1"
+						/>
+					</SecondTitle>
+					<Paragraph>
+						Flexibilidade de horário - treine quando quiser!
+					</Paragraph>
+					<Paragraph>Exercite-se no conforto do seu lar</Paragraph>
+					<Paragraph>Exercícios adaptados pra você</Paragraph>
+					<Paragraph>
+						Acompanhamento individual com orientações e avaliações
+					</Paragraph>
+				</Info>
 			</Section2>
 
 			<Section3>

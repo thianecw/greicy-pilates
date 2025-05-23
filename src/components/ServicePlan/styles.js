@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const PlansSection = styled.section`
   background-color: ${(props) => props.theme.lightPink};
   padding: 40px 20px;
-  border-radius: 12px;
   font-family: ${(props) => props.theme.poppinsFont};
   color: ${(props) => props.theme.mainGreen};
+  padding: 50px;
+      box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.1);
 `;
 
 export const Title = styled.h2`
@@ -17,31 +18,41 @@ export const Title = styled.h2`
 
 export const Description = styled.div`
   font-size: 1.1rem;
+font-weight: bold;
   margin: 10px;
   line-height: 1.6;
-    color: ${(props) => props.theme.secondTitle};
-text-align: center;
+  color: ${(props) => props.theme.secondTitle};
+text-align: justify;
 `;
 
 export const PlansGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+  gap: 40px;
 `;
 
 export const PlanCard = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;  /* Distribui de forma uniforme */
   border-radius: 12px;
   background-color: ${(props) => props.theme.bg};
   box-shadow: 0 4px 8px ${(props) => props.theme.mainBorder};
   color: #7a7c68;
   box-sizing: border-box;
-  height: 100%;  /* Usa toda a altura disponível */
-  min-height: 400px;  /* Define um mínimo para controlar o espaço */
+  height: 100%;
+  min-height: 400px; 
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+padding: 10px 30px;
+  position: relative;
 `;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: space-between;
+  margin-top: auto;
+    `;
 
 export const PlanTitle = styled.h3`
   width: 100%;         
@@ -49,11 +60,12 @@ export const PlanTitle = styled.h3`
   margin: 0 0 15px 0;     
   color: #8a8f7f;        
   font-weight: 600;  
-  font-size: 25px ;
   border-radius: 8px 8px 0 0;
   box-sizing: border-box;
-background-color: ${(props) => props.theme.darkPink};
 text-align: center;
+font-size: 1.5rem;
+color: ${(props) => props.theme.mainGreen};
+border-bottom: 1px solid ${(props) => props.theme.mainGreen};
 `;
 
 export const PlanItem = styled.p`
@@ -63,11 +75,11 @@ export const PlanItem = styled.p`
 `;
 
 export const PriceItem = styled.p`
-  margin: 8px 0;
-  font-weight: 600;
-font-size: 40px;
-  margin: 30px;
+ margin: 0 0 10px 0;
+   font-weight: 600;
 text-align: center;
+color: ${(props) => props.theme.mainGreen};
+font-size: 2rem;
 `;
 
 export const Button = styled.button`
@@ -75,26 +87,32 @@ export const Button = styled.button`
   background-color: ${(props) => props.theme.mainGreen};
   color: ${(props) => props.theme.bg};
   font-size: 20px;
-  border-radius: 20px;
+  border-radius: 10px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 10px;
+  align-items: center;
+  text-align: center;
+padding: 12px 24px;
   text-transform: uppercase;
   margin-top: auto;
   text-decoration: none;
  border: 1px solid transparent; 
    transition: all 0.3s ease;
+   font-weight: bold;
   box-sizing: border-box;
   margin-bottom: 10px;
+  width: 200px;
+
+  &:focus {
+  outline: 2px solid ${(props) => props.theme.mainGreen};
+  outline-offset: 2px;
+}
   
 &:hover {
      transform: scale(1.05);
     background-color: transparent;
     color: ${(props) => props.theme.mainGreen};
-border: 1px solid ${(props) => props.theme.mainGreen}; /* Borda visível */
-
-
+border: 1px solid ${(props) => props.theme.mainGreen};
   }
 
   &:active {

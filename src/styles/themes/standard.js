@@ -9,7 +9,6 @@ export const standardTheme = {
 	secondBorder: "2px solid #999b84", // borda principal usando o verde
 	title: "#6c5151",
 	secondTitle: "#6e4c50",
-	hover: "#c8c8b6", // cor de hover suave derivada do verde
 	gradient: "linear-gradient(135deg, #f4eeed 0%, #efd9d1 100%)", // um gradiente suave de branco a rosa claro
 	complementaryColor: "#b0a792", // sugerida: um tom neutro que complementa as outras cores
 	poppinsFont: '"Poppins", sans-serif',

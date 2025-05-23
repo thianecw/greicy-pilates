@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FeedbackSection = styled.section`
-background-color: ${(props) => props.theme.mainGreen};
+background-color: #EAE6DF;
   padding: 40px 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   font-family: ${(props) => props.theme.poppinsFont};
@@ -31,13 +31,21 @@ export const FeedbackList = styled.div`
 export const FeedbackCard = styled.div`
   background-color: ${(props) => props.theme.bg};
   padding: 20px;
-  border-radius: 10px;
   box-shadow: 0 2px 4px ${(props) => props.theme.mainBorder};
   font-size: 0.95rem;
   line-height: 1.4;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+border-radius: 16px;
+padding: 25px;
+background-color: #eee;
+`;
+
+export const QuoteIcon = styled.img`
+align-self: flex-end;
+  margin-bottom: 10px;
 `;
 
 export const Footer = styled.div`

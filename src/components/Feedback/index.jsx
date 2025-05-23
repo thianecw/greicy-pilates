@@ -4,6 +4,7 @@ import {
 	FeedbackList,
 	FeedbackCard,
 	Name,
+	QuoteIcon,
 	Footer,
 	Location,
 } from "./styles";
@@ -18,7 +19,7 @@ export const Feedback = () => {
 		},
 		{
 			id: 2,
-			text: "A flexibilidade para treinar em casa foi essencial para mim. As aulas são claras, as adaptações fizeram toda a diferença e pude melhorar minha postura e aliviar dores. Ameiiii!",
+			text: "Engravidei na Irlanda e fiquei perdida!! Encontrar a Greicy foi maravilhoso porque ela me orientou super bem sobre várias coisas da gestação e sobre gestar na Irlanda kkkk Ameiiii",
 			name: "Fernanda S.",
 			location: "Bray",
 		},
@@ -42,7 +43,13 @@ export const Feedback = () => {
 			<FeedbackList>
 				{feedback.map(({ id, text, name, location }) => (
 					<FeedbackCard key={id}>
-						<p>“{text}”</p>
+						<QuoteIcon
+							width="30"
+							height="30"
+							src="https://img.icons8.com/ios/50/quote--v1.png"
+							alt="quote--v1"
+						/>
+						{text}
 						<Footer>
 							<Name>{name}</Name>
 							<Location>{location}</Location>
